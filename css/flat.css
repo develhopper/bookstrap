@@ -1,0 +1,105 @@
+.bg-red {
+  background: #d32f2f;
+}
+
+.bg-green {
+  background: #388E3C;
+}
+
+.bg-blue {
+  background: #1976D2;
+}
+
+.bg-light-blue {
+  background: #0288D1;
+}
+
+.bg-cyan {
+  background: #0097A7;
+}
+
+.bg-grey {
+  background: #212121;
+}
+
+.bg-blue-grey {
+  background: #263238;
+}
+
+.btn {
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  background: #263238;
+  color: white;
+  display: inline-block;
+  min-width: 100px;
+  text-align: center;
+  border: 3px solid #263238;
+}
+.btn:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
+}
+
+.btn-primary {
+  background: #1976D2;
+}
+
+.btn-danger {
+  background: #d32f2f;
+}
+
+.btn-success {
+  background: #388E3C;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar, nav {
+  display: flex;
+  flex-flow: row;
+  background: #263238;
+  box-shadow: 1px 1px 3px grey;
+  color: white;
+  min-height: 50px;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  list-style-type: none;
+  padding: 15px;
+}
+.nav-item:hover {
+  cursor: pointer;
+  color: #1976D2;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mh-auto {
+  margin: 0 auto 0 auto;
+}
+
+.mv-auto {
+  margin: auto 0 auto 0;
+}
+
+/*# sourceMappingURL=flat.css.map */

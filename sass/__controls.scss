@@ -1,0 +1,29 @@
+.btn{
+    padding:10px;
+    text-decoration: none;
+    border-radius: 5px;
+    background:$blue-grey;
+    color:white;
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+    border:3px solid $blue-grey;
+    &:hover{
+        cursor: pointer;
+        background: white;
+        color:black;
+    }
+}
+
+
+.btn-primary{
+    background:$blue;
+}
+
+.btn-danger{
+    background: $red;
+}
+
+.btn-success{
+    background: $green;
+}

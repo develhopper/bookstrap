@@ -1,0 +1,49 @@
+body{
+margin:0;
+padding: 0;
+}
+
+.navbar{
+    display: flex;
+    flex-flow: row;
+    background:$blue-grey;
+    box-shadow: 1px 1px 3px grey;
+    color:white;
+    min-height: 50px;
+}
+nav{
+    @extend .navbar
+}
+
+.nav{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item{
+    list-style-type: none;
+    padding:15px;
+    &:hover{
+        cursor: pointer;
+        color:$blue;
+    }
+}
+
+.ml-auto{
+    margin-left: auto;
+}
+
+.mr-auto{
+    margin-right: auto;
+}
+
+.mh-auto{
+    margin: 0 auto 0 auto;
+}
+
+.mv-auto{
+    margin: auto 0 auto 0;
+}
