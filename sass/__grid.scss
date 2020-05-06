@@ -1,0 +1,39 @@
+$grid-cols:5;
+
+.row{
+  display: flex;
+  flex-flow: row wrap;
+  &.reverse{
+    flex-direction: row-reverse;
+  }
+}
+
+.container{
+  max-width: 768px;
+  margin: 0 auto;
+  &-fluid{
+    max-width: 100%;
+    margin:0;
+  }
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  }
+
+.col-1{
+  @extend .col;
+  width: 100%;
+}
+
+@for $i from 1 through ($grid-cols)-1{
+  @for $j from $i+1 through $grid-cols{
+    .col-#{$i}-#{$j}{
+      @extend .col;
+      width: ($i/$j)*100%;
+    }
+  }
+}
