@@ -1,31 +1,36 @@
 @import '__variables';
 
 .bg-red{
-    background:$red;
+    background:$red !important;
 }
 
 .bg-green{
-    background: $green;
+    background: $green !important;
 }
 
 .bg-blue{
-    background: $blue;
+    background: $blue !important;
 }
 
 .bg-light-blue{
-    background: $l-blue;
+    background: $l-blue !important;
 }
 
 .bg-cyan{
-    background: $cyan;
+    background: $cyan !important;
 }
 
 .bg-grey{
     color:white;
-    background: $grey;
+    background: $grey !important;
 }
 
 .bg-blue-grey{
     color:white;
-    background: $blue-grey;
+    background: $blue-grey !important;
+}
+
+.bg-white{
+    background: white !important;
+    color:black;
 }

@@ -1,0 +1,15 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px $grey;
+    overflow: hidden;
+}
+
+.card-title{
+    padding: 10px;
+}
+
+.card-body{
+    padding:10px;
+}

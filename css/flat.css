@@ -1,31 +1,36 @@
 .bg-red {
-  background: #d32f2f;
+  background: #d32f2f !important;
 }
 
 .bg-green {
-  background: #388E3C;
+  background: #388E3C !important;
 }
 
 .bg-blue {
-  background: #1976D2;
+  background: #1976D2 !important;
 }
 
 .bg-light-blue {
-  background: #0288D1;
+  background: #0288D1 !important;
 }
 
 .bg-cyan {
-  background: #0097A7;
+  background: #0097A7 !important;
 }
 
 .bg-grey {
   color: white;
-  background: #212121;
+  background: #212121 !important;
 }
 
 .bg-blue-grey {
   color: white;
-  background: #263238;
+  background: #263238 !important;
+}
+
+.bg-white {
+  background: white !important;
+  color: black;
 }
 
 .btn {
@@ -66,7 +71,7 @@ body {
   display: flex;
   flex-flow: row;
   background: #263238;
-  box-shadow: 1px 1px 3px grey;
+  box-shadow: 1px 1px 3px #212121;
   color: white;
   min-height: 50px;
 }
@@ -102,6 +107,22 @@ body {
 
 .mv-auto {
   margin: auto 0 auto 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 2px 3px 4px #212121;
+  overflow: hidden;
+}
+
+.card-title {
+  padding: 10px;
+}
+
+.card-body {
+  padding: 10px;
 }
 
 .row {
