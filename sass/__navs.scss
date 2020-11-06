@@ -1,8 +1,3 @@
-body{
-margin:0;
-padding: 0;
-}
-
 .navbar{
     display: flex;
     flex-flow: row;
@@ -10,6 +5,7 @@ padding: 0;
     box-shadow: 1px 1px 3px $grey;
     color:white;
     min-height: 50px;
+    width: 100%;
 }
 nav{
     @extend .navbar
@@ -23,13 +19,83 @@ nav{
     padding: 0;
 }
 
+.nav-container{
+    width:100%;
+}
+
 .nav-item{
     list-style-type: none;
     padding:15px;
+    text-align: center;
     &:hover{
         cursor: pointer;
         color:$blue;
     }
+}
+
+.navbar-toggle{
+	display: none;
+	background:none;
+	color:white;
+	border:none;
+	font-size: large;
+}
+
+.navbar-brand{
+	margin:auto 15px;
+}
+
+.dock{
+    z-index: 100;
+	position: fixed;
+	height: 100%;
+    width: 80px;
+    left:0;
+    
+    &.right{
+        right: 0;
+    }
+}
+
+.vnav {
+	display: flex;
+	flex-flow: column wrap;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+.dropdown {
+	display: inline-block;
+    position: relative;
+    &:hover .dropdown-content {
+        cursor: pointer;
+        display: block;
+    }
+    &.left .dropdown-content {
+        right: 100%;
+        top: 0;
+        border-radius: 5px 0 0 5px;
+        box-shadow: -3px 3px 7px black;
+    }
+}
+
+.dropdown-content {
+    display: none;
+    font-size: initial;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	min-width: 200px;
+	min-height: 100px;
+	overflow: hidden;
+	z-index: 101;
+}
+
+.top-fixed {
+	position: fixed;
+	top: 0;
 }
 
 .ml-auto{
@@ -46,4 +112,8 @@ nav{
 
 .mv-auto{
     margin: auto 0 auto 0;
+}
+
+.mt-auto {
+	margin-top: auto;
 }

@@ -1,4 +1,4 @@
-$grid-cols:5;
+$grid-cols:12;
 
 .row{
   display: flex;
@@ -6,6 +6,21 @@ $grid-cols:5;
   &.reverse{
     flex-direction: row-reverse;
   }
+  &.center{
+    justify-content: center;
+  }
+}
+
+.order-1 {
+	order: 1;
+}
+
+.order-2 {
+	order: 2;
+}
+
+.order-0 {
+	order: 0;
 }
 
 .container{
@@ -17,23 +32,28 @@ $grid-cols:5;
   }
 }
 
-.col{
+[class^="col"]{
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
   box-sizing: border-box;
+  &.center{
+    align-items: center;
   }
+}
+
+.align-start{
+	align-items: flex-start;
+}
 
 .col-1{
-  @extend .col;
   width: 100%;
 }
 
 @for $i from 1 through ($grid-cols)-1{
   @for $j from $i+1 through $grid-cols{
     .col-#{$i}-#{$j}{
-      @extend .col;
-      width: ($i/$j)*100%;
+      flex-basis: ($i/$j)*100%;
     }
   }
 }

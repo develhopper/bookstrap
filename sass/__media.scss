@@ -1,0 +1,21 @@
+@media screen and (max-width:820px) {
+	[class^='col']{
+		min-width:100%;
+	}
+}
+
+@media screen and (max-width:480px){
+	.nav-container{
+		display: none;
+		.nav{
+			flex-direction:column;
+		}
+	}
+
+	.navbar{
+		flex-direction:column;
+	}
+	.navbar-toggle{
+		display:block;
+	}
+}

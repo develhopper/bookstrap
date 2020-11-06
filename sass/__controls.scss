@@ -10,20 +10,23 @@
     border:3px solid $blue-grey;
     &:hover{
         cursor: pointer;
-        background: white;
-        color:black;
+        box-shadow: 1px 1px 3px black;
     }
+}
+
+.clickable{
+	cursor: pointer;
 }
 
 
 .btn-primary{
-    background:$blue;
+    background:$primary;
 }
 
 .btn-danger{
-    background: $red;
+    background: $danger;
 }
 
 .btn-success{
-    background: $green;
+    background: $success;
 }
