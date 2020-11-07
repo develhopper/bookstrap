@@ -46,8 +46,32 @@ $grid-cols:12;
 	align-items: flex-start;
 }
 
+.align-end{
+	align-items: flex-end;
+}
+
 .col-1{
   width: 100%;
+}
+
+.ml-auto{
+    margin-left: auto !important;
+}
+
+.mr-auto{
+    margin-right: auto !important;
+}
+
+.mh-auto{
+    margin: 0 auto 0 auto !important;
+}
+
+.mv-auto{
+    margin: auto 0 auto 0 !important;
+}
+
+.mt-auto {
+	margin-top: auto !important;
 }
 
 @for $i from 1 through ($grid-cols)-1{

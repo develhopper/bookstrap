@@ -40,36 +40,41 @@
 }
 
 .bg-black{
-    background:black;
+    background:black !important;
     color:white;
 }
 
 .bg-amber{
-    background:$amber;
+    background:$amber !important;
+    color:white;
+}
+
+.bg-teal{
+    background:$teal !important;
     color:white;
 }
 
 .bg-none{
-    background: none;
+    background: none !important;
 }
 
 .bg-primary{
-    background:$primary;
+    background:$primary !important;
     color:white;
 }
 
 .bg-success{
-    background:$success;
+    background:$success !important;
     color:white;
 }
 
 .bg-danger{
-    background:$danger;
+    background:$danger !important;
     color:white;
 }
 
 .bg-alert{
-    background:$alert;
+    background:$alert !important;
     color:white;
 }
 
